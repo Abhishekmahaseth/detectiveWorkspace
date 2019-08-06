@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Detecttive Workspace</title>
+
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+    <!-- d3 map -->
+    <script src="https://unpkg.com/d3@4"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <!-- draggable div -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+  <body>
+
+    <div id="content">
+
+      <div class="openMenuDiv">
+        <a id = 'openMenuBtn' href="#"><i class="fas fa-bars"></i></a>
+      </div>
+
+      <div class="fileNav">
+        <a id = 'closeMenuBtn' href='#'><i class = "fas fa-angle-left"></i></a>
+
+        <form id="searchForm">
+          <input type="text" name="file" placeholder="Lookup file...">
+          <button type="submit" id="searchButton"><i class="fas fa-search"></i></button>
+        </form>
+
+        <!-- <li> be dynamically appended after the files are read -->
+        <ul id='list'>
+          <!-- <li id = 'file_menu'></li> -->
+        </ul>
+
+      </div>
+
+      <div class="sideNav" id="toolsBar">
+
+        <form id="wordSearch">
+          <input type="text" name="file" placeholder="Lookup word...">
+          <button type="submit" id="wordSearchButton"><i class="fas fa-search"></i></button>
+        </form>
+
+        <ul>
+          <li id = 'world_map'> <a href="#">Locations</a> </li>
+          <li id = 'names_chart'> <a href="#">Names</a> </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/worldMap.js"></script>
+    <script type="text/javascript" src="js/peopleName.js"></script>
+  </body>
+</html>

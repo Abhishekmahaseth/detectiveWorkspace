@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #EFEDF7; */
+}
+
+.fileNav {
+  height: 100%;       /* takes the whole page */
+  width: 0;           /* hidden at first */
+  position: fixed;    /* this div is a child of content so when the margin of
+                         content changes, having position fixed makes sure that
+                         it doesnt move with content */
+  z-index: 1;         /* makes sure that it renders on top of other elememts */
+  overflow-x: hidden; /* makes sure that it displayes within the width */
+  top: 0;
+  left: 0;
+  padding-top: 5px;
+  background-color: #7468BE;
+  transition: 0.6s;
+  opacity: 0.85;
+}
+.sideNav {
+  width: 230px;
+  height: 500px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  opacity: 0.85;
+  background-color: #7468BE;
+}
+
+#content {
+  transition: 0.6s;
+}
+
+#openMenuBtn , #closeMenuBtn{
+  font-size: 35px;
+  color: #473C8B;
+}
+
+#closeMenuBtn {
+  position: absolute;   /* to move it around */
+  font-size: 45px;
+  right: 10px;
+}
+
+#searchForm {
+  padding-top: 65px;
+  padding-left: 20px;
+}
+
+#wordSearch {
+  padding-top: 35px;
+  padding-left: 20px;
+}
+
+ul {
+  padding: 0;   /* removes the bullet */
+}
+
+li{
+  display: block;
+  padding: 8px 35px;
+  font-weight: 800;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li:hover {
+  background-color: #B1ABDB;
+}
+
+.textContainer {
+  width: 300px;
+  background-color: rgba(86, 86, 255, 0.4);
+  padding: 20px;
+  position: fixed;
+}
+
+.textContainer a {
+  font-size: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.textContainer p {
+  padding-top: 15px;
+}
+
+.countries {
+  fill: #d3d3d3;
+  stroke: #333333;
+  stroke-width: 0.8;
+}
+
+span {
+  font-weight: 800;
+}
