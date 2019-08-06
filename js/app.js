@@ -88,10 +88,10 @@ $.getJSON("preProcess/data.json",function(data){
       }
       else {
         file_li = document.getElementById(filename);
-        file_li.style.backgroundColor = "#6912CC";
+        file_li.style.backgroundColor = "#7468BE";
       }
     }
-    
+
     //regular js code. select the divClass -> returns list of element
     var openTextCont = document.getElementsByClassName('textContainer');
     //read the csv file -> get the list of locations
