@@ -1,3 +1,3 @@
 # detectiveWorkspace
 
-![Alt Text](https://giphy.com/embed/Sw5hYqnv8NAaX6QTvi)
+![Alt Text](https://media.giphy.com/media/Sw5hYqnv8NAaX6QTvi/giphy.gif)
